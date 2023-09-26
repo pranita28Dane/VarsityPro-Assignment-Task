@@ -1,0 +1,20 @@
+{% extends "app/base.html" %}
+
+{% block content %}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h1>Welcome, {{ user.username }} <br> The Great Django Blog</h1>
+      <br>
+      <p>This is the home page of your application.</p>
+
+      {% if user.is_authenticated %}
+      <p>You are logged in as {{ user.username }}.</p>
+      {% else %}
+      <p>You are not logged in. <a href="{% url 'login' %}" class="btn btn-primary">Login</a> or <a
+          href="{% url 'register' %}" class="btn btn-success">Register</a> to get started.</p>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}
