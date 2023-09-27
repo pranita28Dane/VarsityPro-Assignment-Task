@@ -74,7 +74,7 @@ password: admin
 python manage.py runserver
 ```
 
-The project should now be running locally. You can access the admin panel at http://localhost:8000/ and use the superuser credentials you created to log in.
+The project should now be running locally. 
 
 ## API Documentation
 For API documentation and usage examples, please refer to the API Documentation file.
